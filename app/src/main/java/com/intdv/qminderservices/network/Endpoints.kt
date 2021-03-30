@@ -14,4 +14,5 @@ interface Endpoints {
     @Headers("X-Qminder-REST-API-Key: <add your API key here>")
     @POST("/v1/lines/{id}/ticket/")
     fun issueTicket(@Path(value = "id", encoded = true) id: String): Call<TicketResponse>
+
 }
